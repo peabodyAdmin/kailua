@@ -1,7 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.19;
 
-import {IRiscZeroVerifier} from "@kailua/contracts/src/lib.rs";
+// Mock interface for RiscZero Verifier
+interface IRiscZeroVerifier {
+    function verify(bytes memory proof) external view returns (bool);
+}
 
 /**
  * @title L1Commits
